@@ -1,0 +1,27 @@
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #e45028;
+    color: #fff;
+    border-radius: 4%;
+    &:hover{
+        background: #c1401e;;
+    }
+}
+
+
+.review__btn{
+    width: 6.25rem;
+    height: 2.375rem;
+    background-color: #2f3234;
+    width: 130px;
+}  
+.header__btn{
+    font-family: 'ubuntumedium';
+    margin-left: 20px;
+    font-size: 0.92857rem;
+    padding: 9px 18px;
+}

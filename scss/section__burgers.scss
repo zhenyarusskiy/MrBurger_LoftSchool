@@ -1,0 +1,39 @@
+.container__burger-pagination{
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    
+
+}
+.section__burgers{
+    background-image: url(../image/sec__burgers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.pagination-burger__list{
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    top:50%;
+
+    
+
+    
+    
+}
+.rotate-left{
+transform: rotate(90deg);
+}
+.rotate-right{
+    transform: rotate(-90deg);
+}
+
+
+.burger-info{
+
+&__list{
+    list-style: none;
+}
+}

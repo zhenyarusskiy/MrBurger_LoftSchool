@@ -1,0 +1,70 @@
+
+.review{
+
+    &__list{
+        height: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+    }
+    &__item{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: padding-box;
+        flex-grow: 1;
+        width: 25%;
+        height: 50%;
+        overflow: hidden;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1)
+    }
+    &__hover{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        opacity: 0;
+        height: 100%;
+        padding: 50px 30px 30px 20px;
+        &:hover{
+            opacity: 1;
+          background:rgba(20, 20, 20, 0.7);
+          transform: rotate(360deg);
+          transition: .3s;
+        }
+    }
+
+                                    &__name{
+                                        font-family: 'gagalin';
+                                        font-size: 0.875rem;
+                                        color: #fff;
+                                        margin-bottom: 20px;
+                                    }
+                                    &__text{
+                                        font-family: 'ubuntulight';
+                                        font-size: 0.875rem;
+                                        font-weight: 300;
+                                        line-height: 1.5rem;
+                                        color: #fff;
+                                        margin-bottom: 20px;
+                                        overflow: hidden;
+                                        max-width: 225px;
+                                    }
+                                    
+                                    &__link{
+                                        color:#fff;
+                                        font-family: 'ubuntumedium';
+                                        text-transform: uppercase;
+                                        font-size: 0.8125rem;
+                                        text-decoration: none;
+                                        
+                                    }
+}
+

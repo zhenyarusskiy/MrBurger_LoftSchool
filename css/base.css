@@ -1,0 +1,43 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+button{
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+input, textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    height: 90px;
+}

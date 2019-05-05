@@ -1,0 +1,26 @@
+.pagination {
+  position: fixed;
+  right: 3.57143rem;
+  top: 5.57143rem;
+  z-index: 500;
+  list-style: none; }
+
+.pagination li a {
+  width: 0.35714rem;
+  height: 0.35714rem;
+  background: #ffffff;
+  border-radius: 50%;
+  display: inline-block; }
+  .pagination li a::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 0.07143rem solid transparent;
+    border-radius: 50%;
+    left: -0.35rem;
+    top: 0.16rem; }
+
+.pagination li a.active:after {
+  border-color: #ffffff; }
