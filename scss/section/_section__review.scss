@@ -1,45 +1,9 @@
 
 .review{
 
-    &__list{
-        height: 100%;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        list-style: none;
-        padding: 0;
-    }
-    &__item{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-clip: padding-box;
-        flex-grow: 1;
-        width: 25%;
-        height: 50%;
-        overflow: hidden;
-        -webkit-filter: grayscale(1);
-        filter: grayscale(1)
-    }
-    &__hover{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        
-        opacity: 0;
-        height: 100%;
-        padding: 50px 30px 30px 20px;
-        &:hover{
-            opacity: 1;
-          background:rgba(20, 20, 20, 0.7);
-          transform: rotate(360deg);
-          transition: .3s;
-        }
-    }
+    
+   
+   
 
                                     &__name{
                                         font-family: 'gagalin';
@@ -68,3 +32,45 @@
                                     }
 }
 
+.review__list{
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.review__item{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    flex-grow: 1;
+    width: 25%;
+    height: 50%;
+    overflow: hidden;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    
+}
+
+.review__hover{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    height: 100%;
+    padding: 50px 30px 30px 20px;
+    &:hover{
+        opacity: 1;
+      background:rgba(20, 20, 20, 0.7);
+      transform: rotate(360deg);
+      transition: .3s;
+    }
+}

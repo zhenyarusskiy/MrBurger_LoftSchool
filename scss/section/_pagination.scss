@@ -1,9 +1,13 @@
 .pagination{
     position: fixed;
-    right: 3.57143rem;
+    right: 11.09rem;
     top: 5.57143rem;
     z-index: 500;
     list-style: none;
+
+}
+.pagination li{
+    margin-bottom: 7px;
 }
 .pagination li a{
     
