@@ -4,12 +4,16 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    padding: 10px 15px;
-  border-radius: 5px;
-  background-color: #e45028;
-  font-size: 13px;
-  font-weight: 500;
-  text-decoration: none;
+    font-family: 'ubuntumedium';
+    border-radius: 5px;
+    background-color: #e45028;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 11px 16px;
+
+ 
     &:hover{
         background: #c1401e;;
     }
@@ -17,11 +21,11 @@
 
 
 .review__btn{
-    padding: 0.9rem 0;
+  display: inline-flex;
     background-color: #2f3234;
-    width: 130px;
+ 
 }  
 .header__btn{
-    font-family: 'ubuntumedium';
+    
     margin-left: 20px;
 }
