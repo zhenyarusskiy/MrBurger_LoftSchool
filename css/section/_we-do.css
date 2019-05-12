@@ -1,0 +1,41 @@
+.we-do {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+.we-do__img {
+  max-width: 100%; }
+
+.we_do__icon {
+  top: -50px;
+  right: -16px; }
+
+.we-do__slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 0 20px 30px; }
+
+.we-do__text {
+  font-family: 'lifehackmedium';
+  font-size: 4.0625rem;
+  line-height: 85px;
+  color: #FFF; }
+
+.we-do__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }

@@ -1,0 +1,42 @@
+
+.header{
+    justify-content: space-between;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center
+}
+.menu-list{
+    display: flex;
+    &__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #fff;
+      
+    }
+    
+}
+.menu-list__item{
+    font-family: 'ubuntumedium';
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    list-style: none;
+    text-decoration: none;
+    &:first-child a::before{
+        display: none;
+    }
+}
+.menu-list__link::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 16px;
+   
+  
+}
