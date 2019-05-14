@@ -722,7 +722,7 @@ textarea {
 
 .team {
   position: relative;
-  background-image: url(../../image/team__mainpic.png);
+  background-image: url(../image/team__mainpic.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top; }
@@ -803,7 +803,7 @@ textarea {
   font-family: 'ubuntulight'; }
 
 .carte {
-  background-image: url(../../image/section__carte-mainimg.png);
+  background-image: url(../image/section__carte-mainimg.png);
   background-size: cover;
   background-position: top; }
 
@@ -812,7 +812,7 @@ textarea {
 
 .carte-accordeon__trigger {
   display: inline-block;
-  background-image: url(image/cart_accordeon_meat.png);
+  background-image: url(../image/cart_accordeon_meat.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: cover;
