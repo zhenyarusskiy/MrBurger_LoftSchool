@@ -1,0 +1,82 @@
+.team{
+    position: relative;
+    background-image: url(../../image/team__mainpic.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:top;
+
+}
+.team__content{
+    position: absolute;
+    background-color: rgba(47,50,52,.93);
+    left: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 6.25rem 4.0625rem 0 4.0625rem;
+}
+.team__title{
+    padding-bottom: 3.8rem;
+}
+.accordeon__item--active{
+    height: auto;
+}
+.accordeon__content{
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    padding-left: 18px;
+}
+.accordeon__trigger{
+    color: #fff;
+    text-decoration: none;
+    font-size: .875rem;
+    font-family: Gagalin;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    &::before{
+        content: '';
+        display: inline-block;
+        height: 0;
+        width: 0;
+        border: 5px solid transparent;
+        border-bottom-width: 0;
+        border-top-color: #f9b43b;
+        margin-right: 0.5rem;
+    }
+}
+.accordeon__item-image{
+    height: 6.25rem;
+    width: 6.25rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 1.25rem;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 6.25rem;
+    min-width: 6.25rem;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.accordeon__desc{
+    padding:0 0 0 15px;
+    max-width: 335px;
+}
+.accordeon__desc-title , .accordeon__desc-text{
+    color:#fff;
+}
+.accordeon__desc-title{
+    font-family: 'ubuntumedium';
+    margin-bottom: 20px;
+}
+.accordeon__desc-text{
+    font-family: 'ubuntulight';
+}

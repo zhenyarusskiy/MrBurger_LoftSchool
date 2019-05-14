@@ -481,6 +481,10 @@ textarea {
   /* padding-bottom: 89px; */
   top: -45px; }
 
+.carte__title {
+  color: #ffff;
+  padding: 8rem 0 0 6rem; }
+
 .hero {
   padding: 15px 0 40px 0;
   background-image: url(../image/Rectangle.png);
@@ -537,14 +541,6 @@ textarea {
   font-size: 4.0625rem;
   line-height: 85px;
   color: #FFF; }
-
-.we-do__down {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
 
 .we-do__down {
   display: -webkit-box;
@@ -656,29 +652,6 @@ textarea {
   font-weight: 300;
   line-height: 1.5rem; }
 
-.review__name {
-  font-family: 'gagalin';
-  font-size: 0.875rem;
-  color: #fff;
-  margin-bottom: 20px; }
-
-.review__text {
-  font-family: 'ubuntulight';
-  font-size: 0.875rem;
-  font-weight: 300;
-  line-height: 1.5rem;
-  color: #fff;
-  margin-bottom: 20px;
-  overflow: hidden;
-  max-width: 225px; }
-
-.review__link {
-  color: #fff;
-  font-family: 'ubuntumedium';
-  text-transform: uppercase;
-  font-size: 0.8125rem;
-  text-decoration: none; }
-
 .review__list {
   height: 100%;
   display: -webkit-box;
@@ -731,33 +704,6 @@ textarea {
     -o-transition: .3s;
     transition: .3s; }
 
-.review__hover {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  opacity: 0;
-  height: 100%;
-  padding: 50px 30px 30px 20px; }
-  .review__hover:hover {
-    opacity: 1;
-    background: rgba(20, 20, 20, 0.7);
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
-
 .review__name {
   font-family: 'gagalin';
   font-size: 0.875rem;
@@ -773,6 +719,108 @@ textarea {
   margin-bottom: 20px;
   overflow: hidden;
   max-width: 225px; }
+
+.team {
+  position: relative;
+  background-image: url(../../image/team__mainpic.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; }
+
+.team__content {
+  position: absolute;
+  background-color: rgba(47, 50, 52, 0.93);
+  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: left;
+  padding: 6.25rem 4.0625rem 0 4.0625rem; }
+
+.team__title {
+  padding-bottom: 3.8rem; }
+
+.accordeon__item--active {
+  height: auto; }
+
+.accordeon__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  padding-left: 18px; }
+
+.accordeon__trigger {
+  color: #fff;
+  text-decoration: none;
+  font-size: .875rem;
+  font-family: Gagalin;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 2.5rem; }
+  .accordeon__trigger::before {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: 5px solid transparent;
+    border-bottom-width: 0;
+    border-top-color: #f9b43b;
+    margin-right: 0.5rem; }
+
+.accordeon__item-image {
+  height: 6.25rem;
+  width: 6.25rem;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1.25rem;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 6.25rem;
+  min-width: 6.25rem;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center; }
+
+.accordeon__desc {
+  padding: 0 0 0 15px;
+  max-width: 335px; }
+
+.accordeon__desc-title, .accordeon__desc-text {
+  color: #fff; }
+
+.accordeon__desc-title {
+  font-family: 'ubuntumedium';
+  margin-bottom: 20px; }
+
+.accordeon__desc-text {
+  font-family: 'ubuntulight'; }
+
+.carte {
+  background-image: url(../../image/section__carte-mainimg.png);
+  background-size: cover;
+  background-position: top; }
+
+.carte-accordeon {
+  height: 100%; }
+
+.carte-accordeon__trigger {
+  display: inline-block;
+  background-image: url(image/cart_accordeon_meat.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: cover;
+  width: 100%;
+  height: 80px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
 
 .pagination {
   position: fixed;
