@@ -11,12 +11,13 @@
 }
 .carte-accordeon{
     height: 100%;
+    position: absolute;
+    right: 0;
+    height: 100%;
 }
 .carte-accordeon__list{
     display: flex;
     height: 100%;
-    position: absolute;
-    right: 0;
 }
 .carte-accordeon__trigger{
     display: flex;

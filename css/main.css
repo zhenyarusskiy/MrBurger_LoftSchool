@@ -812,15 +812,16 @@ textarea {
   position: absolute; }
 
 .carte-accordeon {
+  height: 100%;
+  position: absolute;
+  right: 0;
   height: 100%; }
 
 .carte-accordeon__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
-  position: absolute;
-  right: 0; }
+  height: 100%; }
 
 .carte-accordeon__trigger {
   display: -webkit-box;
