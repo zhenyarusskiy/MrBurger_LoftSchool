@@ -1,0 +1,23 @@
+.delivery{
+    background-image: url(../../image/delivery-mainpic.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.delivery__title{
+    text-align: center;
+}
+.form__box{
+    width: 48%;
+}
+.form__label--text{
+    color: #ffffff;
+}
+.form__element ,.form__row{
+    display: flex;
+}
+.form__row {
+    justify-content: space-between;
+    width: 100%;
+
+}
