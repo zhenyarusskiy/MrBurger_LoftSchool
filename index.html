@@ -322,74 +322,87 @@
             
         </ul>
     </section>
-    <section class="section delivery">
+    <section class="section order">
         <div class="container">
-        <h3 class="title delivery__title">Закажите доставку</h3>
-        <form action="#" class="form">
-            <div class="form__wrap">
-                <div class="form__element">
-                    <div class="form__box">
+            <div class="title order__title">Закажите доставку</div>
+            <div class="form">
+                <form action="" method="post" class="form__area" id="form-order">
+                    <div class="form__block">
                         <div class="form__row">
-                            <div class="form__filed">
-                                <label for="" class="form__label">
-                                    <span class="form__label--text">Ваше имя</span>
-                                    <input type="text" class="form__input " placeholder="Имя , халоп">
-                                </label>
+                            <div class="form__field">
+                                <label for="field-name" class="form__field-title">Имя</label>
+                                <input required name="name" id="field-name" type="text" class="form__field-input">
                             </div>
-                            <div class="form__filed">
-                                <label for="" class="form__label">
-                                    <span class="form__label--text">Телефон</span>
-                                    <input type="text" class="form__input" placeholder="+79780000000">
-                                </label>
+                            <div class="form__field">
+                                <label for="field-phone" class="form__field-title">Телефон</label>
+                                <input required name="phone" id="field-phone" type="text" class="form__field-input">
                             </div>
                         </div>
                         <div class="form__row">
-                            <div class="form__filed">
-                                <label for="" class="form__label">
-                                    <span class="form__label--text">Адрес</span>
-                                    <input type="text" class="form__input" placeholder="Ваш адрес">
-                                </label>
+                            <div class="form__field">
+                                <label for="field-street" class="form__field-title">Улица</label>
+                                <input name="street" id="field-street" type="text" class="form__field-input">
                             </div>
                         </div>
                         <div class="form__row">
-                            <div class="form__filed">
-                                <label for="" class="form__label">
-                                     <span class="form__label--text">Дом</span>
-                                    <input type="text" class="form__input" placeholder="Ваш дом">
-                                </label>
+                            <div class="form__field">
+                                <label for="field-house" class="form__field-title">Дом</label>
+                                <input name="house" id="field-house" type="text" class="form__field-input">
                             </div>
-                            <div class="form__filed">
-                                <label for="" class="form__label">
-                                     <span class="form__label--text">Корпус</span>
-                                    <input type="text" class="form__input" placeholder="Ваш корпус">
-                                </label>
+                            <div class="form__field">
+                                <label for="field-housing" class="form__field-title">Корпус</label>
+                                <input name="housing" id="field-housing" type="text" class="form__field-input">
                             </div>
-                            <div class="form__filed">
-                                <label for="" class="form__label">
-                                     <span class="form__label--text">Квартира</span>
-                                    <input type="text" class="form__input" placeholder="Ваа квартира">
-                                </label>
+                            <div class="form__field">
+                                <label for="field-flat" class="form__field-title">Квартира</label>
+                                <input name="flat" id="field-flat" type="text" class="form__field-input">
+
                             </div>
-                            <div class="form__filed">
-                                <label for="" class="form__label">
-                                    <span class="form__label--text">Этаж</span>
-                                    <input type="text" class="form__input" placeholder="Ваш этаж">
-                                </label>
+                            <div class="form__field">
+                                <label for="field-stage" class="form__field-title">Этаж</label>
+                                <input name="stage" id="field-stage" type="text" class="form__field-input">
                             </div>
-                        </div>   
+                        </div>
                     </div>
-                    <div class="form__box">
+                    <div class="form__block">
                         <div class="form__row">
-                            <label for="#" class="form__label">
-                                <span class="form__label--text">Коментарий</span>
-                                <textarea name="text" class="form__textarea"></textarea>
-                            </label>
+                            <div class="form__field">
+                                <label for="field-comment" class="form__field-title">Комментарий</label>
+                                <textarea name="comment" id="field-comment" rows="3" class="form__field-input"></textarea>
+                            </div>
                         </div>
-                    </div>       
-                </div>
+                        <div class="form__row">
+                            <div class="form__radio">
+                                <div class="form__radio-element">
+                                    <input name="money" value="rest" id="radio-rest" type="radio" class="form__radio-input">
+                                    <div class="form__radio-fake"></div>
+                                    <label for="radio-rest" class="form__radio-title">Потребуется сдача</label>
+                                </div>
+                                <div class="form__radio-element">
+                                    <input name="money" value="card" id="radio-card" type="radio" class="form__radio-input">
+                                    <div class="form__radio-fake"></div>
+                                    <label for="radio-card" class="form__radio-title">Оплата по карте</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__checkbox">
+                                <div class="form__checkbox-element">
+                                    <input name="call" id="checkbox-dont-call" type="checkbox" class="form__checkbox-input">
+                                    <div class="form__checkbox-fake"></div>
+                                    <label for="checkbox-dont-call" class="form__checkbox-title">Не перезванивать</label>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <input type="submit" class="button" value="Заказать">
+                            <input type="reset" class="form__reset" value="Очистить">
+                        </div>
+                    </div>
+                </form>
             </div>
-        </form>
-    </div> 
+        </div>
     </section>
     
     </div>
