@@ -872,7 +872,7 @@ textarea {
   color: white; }
 
 .order {
-  background-image: url(../../image/delivery-mainpic.png);
+  background-image: url(../image/delivery-mainpic.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
