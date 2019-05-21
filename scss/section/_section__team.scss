@@ -15,9 +15,19 @@
     bottom: 0;
     text-align: left;
     padding: 6.25rem 4.0625rem 0 4.0625rem;
+    @include tablets{
+        left:0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 .team__title{
     padding-bottom: 3.8rem;
+    @include tablets{
+     text-align: center;
+    }
 }
 .accordeon__item--active{
     height: auto;
@@ -26,7 +36,14 @@
     display: flex;
     height: 0;
     overflow: hidden;
-    padding-left: 18px;
+    padding-left: rem(18px);
+    @include tablets{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: rem(20px);
+    }
 }
 .accordeon__trigger{
     color: #fff;
@@ -41,10 +58,14 @@
         display: inline-block;
         height: 0;
         width: 0;
-        border: 5px solid transparent;
+        border: rem(5px) solid transparent;
         border-bottom-width: 0;
         border-top-color: #f9b43b;
         margin-right: 0.5rem;
+    }
+    @include tablets{
+        display: flex;
+        justify-content: center;
     }
 }
 .accordeon__item-image{
@@ -53,9 +74,6 @@
     display: inline-block;
     vertical-align: top;
     margin-bottom: 1.25rem;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
     max-width: 6.25rem;
     min-width: 6.25rem;
     -webkit-border-radius: 50%;
@@ -67,15 +85,15 @@
     background-position: center;
 }
 .accordeon__desc{
-    padding:0 0 0 15px;
-    max-width: 335px;
+    padding:0 0 0 rem(15px);
+    max-width: rem(335px);
 }
 .accordeon__desc-title , .accordeon__desc-text{
     color:#fff;
 }
 .accordeon__desc-title{
     font-family: 'ubuntumedium';
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 .accordeon__desc-text{
     font-family: 'ubuntulight';

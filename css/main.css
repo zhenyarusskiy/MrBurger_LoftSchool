@@ -21,7 +21,8 @@ html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  font-size: 16px; }
 
 /* Sections
        ========================================================================== */
@@ -352,13 +353,22 @@ template {
 [hidden] {
   display: none; }
 
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px; } }
+
 .section {
   height: 100vh;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 .container {
-  width: 940px;
+  max-width: 940px;
+  width: 95%;
   margin: 0 auto; }
 
 .container_column {
@@ -370,6 +380,10 @@ template {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+
+.wrap {
+  width: 100%;
+  overflow: hidden; }
 
 html, body {
   height: 100%;
@@ -494,7 +508,7 @@ textarea {
   padding: 8rem 0 0 6rem; }
 
 .hero {
-  padding: 15px 0 40px 0;
+  padding: 0.9375rem 0 2.5rem 0;
   background-image: url(../image/Rectangle.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -525,8 +539,8 @@ textarea {
   max-width: 100%; }
 
 .we_do__icon {
-  top: -50px;
-  right: -16px; }
+  top: -3.125rem;
+  right: -1rem; }
 
 .we-do__slogan {
   display: -webkit-box;
@@ -542,12 +556,12 @@ textarea {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0 0 20px 30px; }
+  padding: 0 0 1.25rem 1.875rem; }
 
 .we-do__text {
   font-family: 'lifehackmedium';
   font-size: 4.0625rem;
-  line-height: 85px;
+  line-height: 5.3125rem;
   color: #FFF; }
 
 .we-do__down {
@@ -659,6 +673,9 @@ textarea {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5rem; }
+  @media screen and (max-width: 768px) {
+    .best__text {
+      width: unset; } }
 
 .review__list {
   height: 100%;
@@ -744,9 +761,28 @@ textarea {
   bottom: 0;
   text-align: left;
   padding: 6.25rem 4.0625rem 0 4.0625rem; }
+  @media screen and (max-width: 768px) {
+    .team__content {
+      left: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .team__title {
   padding-bottom: 3.8rem; }
+  @media screen and (max-width: 768px) {
+    .team__title {
+      text-align: center; } }
 
 .accordeon__item--active {
   height: auto; }
@@ -757,7 +793,21 @@ textarea {
   display: flex;
   height: 0;
   overflow: hidden;
-  padding-left: 18px; }
+  padding-left: 1.125rem; }
+  @media screen and (max-width: 768px) {
+    .accordeon__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 1.25rem; } }
 
 .accordeon__trigger {
   color: #fff;
@@ -772,10 +822,18 @@ textarea {
     display: inline-block;
     height: 0;
     width: 0;
-    border: 5px solid transparent;
+    border: 0.3125rem solid transparent;
     border-bottom-width: 0;
     border-top-color: #f9b43b;
     margin-right: 0.5rem; }
+  @media screen and (max-width: 768px) {
+    .accordeon__trigger {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .accordeon__item-image {
   height: 6.25rem;
@@ -783,9 +841,6 @@ textarea {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 1.25rem;
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
   max-width: 6.25rem;
   min-width: 6.25rem;
   -webkit-border-radius: 50%;
@@ -797,15 +852,15 @@ textarea {
   background-position: center; }
 
 .accordeon__desc {
-  padding: 0 0 0 15px;
-  max-width: 335px; }
+  padding: 0 0 0 0.9375rem;
+  max-width: 20.9375rem; }
 
 .accordeon__desc-title, .accordeon__desc-text {
   color: #fff; }
 
 .accordeon__desc-title {
   font-family: 'ubuntumedium';
-  margin-bottom: 20px; }
+  margin-bottom: 1.25rem; }
 
 .accordeon__desc-text {
   font-family: 'ubuntulight'; }
@@ -849,7 +904,7 @@ textarea {
   height: 100%;
   font-family: 'gagalin';
   color: #ffff;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 2; }
 
 .carte-accordeon__item {
@@ -863,10 +918,13 @@ textarea {
   background-color: rgba(47, 50, 52, 0.93); }
   .carte-accordeon__desc--active {
     width: 34rem; }
+    @media screen and (max-width: 768px) {
+      .carte-accordeon__desc--active {
+        width: 37rem; } }
 
 .carte-accordeon__text {
   padding: 4rem 2.2rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.714;
   font-family: "ubuntulight";
   color: white; }

@@ -8,13 +8,15 @@ $red: #e35028;
 $white: #ffffff;
 $grey: #d1cfcb;
 
-/////////
+//breackpoints
+$tablets : 768px;
+$phones: 480px;
 
 
 @import "settings/normalize";
+@import "settings/media";
 @import "settings/base";
 @import "settings/font";
-@import "settings/media";
 @import "section/btn";
 @import "section/title";
 @import "section/section__hero";
