@@ -33,6 +33,9 @@
     .accordeon__content{
        height: 6.725rem;
         opacity: 1;
+        @include tablets{
+          height: 14.725rem;
+        }
     }
     .accordeon__trigger{
         color: $yellow;

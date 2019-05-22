@@ -827,6 +827,9 @@ textarea {
 .accordeon__item--active .accordeon__content {
   height: 6.725rem;
   opacity: 1; }
+  @media screen and (max-width: 768px) {
+    .accordeon__item--active .accordeon__content {
+      height: 14.725rem; } }
 
 .accordeon__item--active .accordeon__trigger {
   color: #f9b43b; }
