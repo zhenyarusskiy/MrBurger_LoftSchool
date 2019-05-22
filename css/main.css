@@ -825,7 +825,7 @@ textarea {
       text-align: center; } }
 
 .accordeon__item--active .accordeon__content {
-  height: 15.625rem;
+  height: 6.725rem;
   opacity: 1; }
 
 .accordeon__item--active .accordeon__trigger {
