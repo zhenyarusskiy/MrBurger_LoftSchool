@@ -30,7 +30,19 @@
     }
 }
 .accordeon__item--active{
-    height: auto;
+    .accordeon__content{
+       height: rem(250px);
+        opacity: 1;
+    }
+    .accordeon__trigger{
+        color: $yellow;
+        &::before{
+            transform: rotate(180deg);
+            transition: 0.5;
+            position: relative;
+            top: rem(7px);
+        }
+    }
 }
 .accordeon__content{
     display: flex;

@@ -463,7 +463,6 @@ textarea {
   min-width: 6.125rem;
   padding: .625rem 1.0625rem;
   border-radius: 5px;
-  background-color: #e45028;
   text-decoration: none;
   font-size: .8125rem;
   font-weight: 500;
@@ -475,8 +474,6 @@ textarea {
   -o-transition: .5s;
   transition: .5s;
   cursor: pointer; }
-  .button:hover {
-    background: #c1401e; }
 
 .review__btn {
   display: -webkit-inline-box;
@@ -485,7 +482,14 @@ textarea {
   background-color: #2f3234; }
 
 .header__btn {
+  background-color: #e45028;
   margin-left: 20px; }
+  .header__btn:hover {
+    background: #c1401e; }
+
+.button__form-submit {
+  background-color: #e45028;
+  margin-right: 20px; }
 
 .title {
   font-family: 'gagalin';
@@ -493,7 +497,10 @@ textarea {
   color: #f9b43b; }
 
 .we-do__title {
-  line-height: 4rem; }
+  line-height: 10rem; }
+  @media screen and (max-width: 768px) {
+    .we-do__title {
+      line-height: 7rem; } }
 
 .best__title {
   position: relative;
@@ -526,14 +533,35 @@ textarea {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1; }
+  @media screen and (max-width: 768px) {
+    .we-do {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .we-do__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0.9;
-  -ms-flex: 0.9;
-  flex: 0.9; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .we-do__wrap {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+      -webkit-box-flex: .8;
+      -ms-flex: .8;
+      flex: .8; } }
 
 .we-do__img {
   max-width: 100%; }
@@ -543,25 +571,15 @@ textarea {
   right: -1rem; }
 
 .we-do__slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
-  -webkit-box-pack: end;
-  justify-content: flex-end;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding: 0 0 1.25rem 1.875rem; }
+  padding: 1rem 0 0 1.875rem; }
 
 .we-do__text {
   font-family: 'lifehackmedium';
   font-size: 4.0625rem;
-  line-height: 5.3125rem;
+  line-height: 3.3125rem;
   color: #FFF; }
 
 .we-do__down {
@@ -598,6 +616,9 @@ textarea {
     align-items: center;
     text-decoration: none;
     color: #fff; }
+  @media screen and (max-width: 768px) {
+    .menu-list {
+      display: none; } }
 
 .menu-list__item {
   font-family: 'ubuntumedium';
@@ -701,6 +722,25 @@ textarea {
   overflow: hidden;
   -webkit-filter: grayscale(1);
   filter: grayscale(1); }
+  @media screen and (max-width: 768px) {
+    .review__item {
+      width: 50%;
+      height: 25%;
+      background-position: center center; } }
+
+@media screen and (max-width: 768px) {
+  .review__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center; } }
 
 .review__hover {
   display: -webkit-box;
@@ -784,8 +824,21 @@ textarea {
     .team__title {
       text-align: center; } }
 
-.accordeon__item--active {
-  height: auto; }
+.accordeon__item--active .accordeon__content {
+  height: 15.625rem;
+  opacity: 1; }
+
+.accordeon__item--active .accordeon__trigger {
+  color: #f9b43b; }
+  .accordeon__item--active .accordeon__trigger::before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: 0.5;
+    -o-transition: 0.5;
+    transition: 0.5;
+    position: relative;
+    top: 0.4375rem; }
 
 .accordeon__content {
   display: -webkit-box;
@@ -912,15 +965,20 @@ textarea {
   display: -ms-flexbox;
   display: flex; }
 
+.carte-accordeon__item--active .carte-accordeon__trigger {
+  color: #f9b43b; }
+
+.carte-accordeon__item--active .carte-accordeon__desc {
+  width: 34rem;
+  opacity: 1; }
+  @media screen and (max-width: 768px) {
+    .carte-accordeon__item--active .carte-accordeon__desc {
+      width: 37rem; } }
+
 .carte-accordeon__desc {
   width: 0;
   overflow: hidden;
   background-color: rgba(47, 50, 52, 0.93); }
-  .carte-accordeon__desc--active {
-    width: 34rem; }
-    @media screen and (max-width: 768px) {
-      .carte-accordeon__desc--active {
-        width: 37rem; } }
 
 .carte-accordeon__text {
   padding: 4rem 2.2rem;
@@ -928,6 +986,9 @@ textarea {
   line-height: 1.714;
   font-family: "ubuntulight";
   color: white; }
+  @media screen and (max-width: 768px) {
+    .carte-accordeon__text {
+      font-size: 1.3rem; } }
 
 .order {
   background-image: url(../image/delivery-mainpic.png);
@@ -952,9 +1013,24 @@ textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (max-width: 768px) {
+    .form__area {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .form__block {
   width: 48%; }
+  @media screen and (max-width: 768px) {
+    .form__block {
+      width: 70%; } }
 
 .form__row {
   margin-bottom: 0.9375rem;
@@ -1049,7 +1125,7 @@ textarea {
   margin-right: 0.5rem; }
 
 .form__checkbox-input:checked + .form__checkbox-fake {
-  background-image: url("../../image/checkbox-orfwr.png");
+  background-image: url("../image/checkbox-orfwr.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 80%; }

@@ -17,11 +17,19 @@
 	font-size: rem(14px);
 	font-weight: 300;
 	justify-content: space-between;
+	@include tablets{
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+	}
 
 }
 
 .form__block {
 	width: 48%;
+	@include tablets{
+	  width: 70%;
+	}
 
 }
 
@@ -118,7 +126,7 @@
 }
 
 .form__checkbox-input:checked + .form__checkbox-fake {
-	background-image: url('../../image/checkbox-orfwr.png');
+	background-image: url('../image/checkbox-orfwr.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 80%;

@@ -38,17 +38,26 @@
 }
 .carte-accordeon__item{
     display: flex;
+    
+}
+.carte-accordeon__item--active{
+    .carte-accordeon__trigger{
+        color: $yellow;
+    }
+    .carte-accordeon__desc{
+        width: 34rem;
+        opacity: 1;
+        @include tablets{
+            width: 37rem;
+        }
+    }
+       
 }
 .carte-accordeon__desc{
     width: 0;
     overflow: hidden;
     background-color: rgba(47,50,52,.93);
-    &--active{
-        width: 34rem;
-        @include tablets{
-            width: 37rem;
-        }
-    }
+   
 }
 
 .carte-accordeon__text{
@@ -57,4 +66,7 @@
     line-height: 1.714;
     font-family: "ubuntulight";
     color: rgb(255, 255, 255);
+    @include tablets{
+        font-size: 1.3rem;
+    }
 }

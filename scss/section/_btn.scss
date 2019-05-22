@@ -8,7 +8,7 @@
     min-width: 6.125rem;
     padding: .625rem 1.0625rem;
     border-radius: 5px;
-    background-color: #e45028;
+    
     text-decoration: none;
     font-size: .8125rem;
     font-weight: 500;
@@ -20,9 +20,7 @@
     cursor: pointer;
 
  
-    &:hover{
-        background: #c1401e;;
-    }
+    
 }
 
 
@@ -32,6 +30,13 @@
  
 }  
 .header__btn{
-    
+    background-color: #e45028;
     margin-left: 20px;
+    &:hover{
+        background: #c1401e;;
+    }
+}
+.button__form-submit{
+    background-color: #e45028;
+    margin-right: 20px;
 }

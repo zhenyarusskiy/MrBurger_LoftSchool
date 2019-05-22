@@ -17,7 +17,9 @@
         color: #fff;
       
     }
-    
+    @include tablets{
+        display: none;
+    }
 }
 .menu-list__item{
     font-family: 'ubuntumedium';
