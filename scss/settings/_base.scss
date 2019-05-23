@@ -9,6 +9,9 @@ html{
 .section{
     height: 100vh;
     box-sizing: border-box;
+    @include phones{
+        height: 100%;
+    }
 }
 .container{
     max-width: 940px;
