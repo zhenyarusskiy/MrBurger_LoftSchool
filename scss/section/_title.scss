@@ -2,6 +2,9 @@
     font-family: 'gagalin';
     font-size: 4.5rem;
     color: #f9b43b;
+    @include phones{
+        font-size: 3.5rem;
+    }
 }
 .we-do__title{
     line-height: 10rem;

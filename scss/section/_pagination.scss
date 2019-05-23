@@ -4,6 +4,12 @@
     top: 5.57143rem;
     z-index: 500;
     list-style: none;
+    @include tablets{
+        display: none;
+    }
+    @include phones{
+        display:none;
+    }
 
 }
 .pagination li{

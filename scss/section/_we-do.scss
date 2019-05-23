@@ -26,6 +26,9 @@
 .we-do__slogan{
     flex: 1;
     padding: 1rem 0 0 1.875rem;
+    @include phones{
+        padding: 0;
+    }
     
 }
 
@@ -35,4 +38,7 @@
     font-size: 4.0625rem;
     line-height: 3.3125rem;
     color: #FFF;
+    @include phones{
+        font-size: 3.5rem;
+    }
 }

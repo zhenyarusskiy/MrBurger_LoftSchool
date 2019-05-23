@@ -33,6 +33,10 @@
     color:#ffff;
     font-size: rem(40px);
     line-height: 2;
+    @include phones{
+        width: 3rem;
+        font-size: 1.5rem;
+    }
     
     
 }
@@ -50,8 +54,11 @@
         @include tablets{
             width: 37rem;
         }
+        @include phones{
+            width: 18rem;
+        }
     }
-       
+  
 }
 .carte-accordeon__desc{
     width: 0;
@@ -68,5 +75,9 @@
     color: rgb(255, 255, 255);
     @include tablets{
         font-size: 1.3rem;
+    }
+    @include phones{
+        font-size: 1rem;
+        text-align: justify;
     }
 }
