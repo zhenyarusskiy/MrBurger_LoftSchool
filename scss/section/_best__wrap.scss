@@ -18,6 +18,9 @@
 .best__picture{
     justify-content: center;
     margin-bottom: 2.1875rem;
+    @include phones{
+        margin: 0 1rem 2.1875rem 0;
+    }
     &_imege{
         @include phones{
             width: rem(94px);
@@ -28,9 +31,18 @@
 .best__item , .best__desc{
     list-style: none;
 }
+.best__desc{
+    @include phones{
+        margin-left: rem(14px);
+    }
+}
 .best__item {
 @include phones{
     display: flex;
+    margin-bottom: rem(20px);
+    &:last-child{
+        margin: 0;
+    }
 }
 }
 
@@ -45,6 +57,7 @@
     margin-bottom: 1.5625rem;
     @include phones {
         text-align: left;
+        line-height: 0;
     }
 }
 .best__text{
@@ -59,5 +72,6 @@
     }
     @include phones {
         text-align: left;
+        font-size: rem(14px);
     }
 }

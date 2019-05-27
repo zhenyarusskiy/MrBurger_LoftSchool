@@ -9,6 +9,7 @@ $white: #ffffff;
 $grey: #d1cfcb;
 
 //breackpoints
+$desctop: 1024px;
 $tablets : 768px;
 $phones: 480px;
 
@@ -30,4 +31,6 @@ $phones: 480px;
 @import "section/section__team";
 @import "section/section__carte";
 @import "section/section_delivery";
+@import "section/section_map";
+@import "section/footer";
 @import "section/pagination";

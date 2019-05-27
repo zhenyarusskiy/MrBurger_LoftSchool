@@ -1,0 +1,103 @@
+.footer{
+    height: rem(60px);
+    background-image: url('../../image/footer_mainImg.png');
+}
+.footer-wrap{
+    display: flex;
+}
+
+
+.contacts{
+    color:$white;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    &__adress{
+        line-height: 2;
+        font-family: 'ubuntulight';
+    }
+    &__phones {
+        color:$orange;
+        font-family: 'ubuntulight';
+    }
+    &__phones::before{
+        content: '';
+        width: 0.9375rem;
+        height: 0.9375rem;
+        background-image: url(../image/phone__footer.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: inline-flex;
+        margin-right: 6px;       
+    }
+}
+.tel{
+    color:$orange;
+}
+
+
+.socials{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.socials__list{
+    display: flex;
+    padding: rem(13px) 0 0 0;
+}
+.socials__link{
+margin-left: rem(20px);
+    &:hover{
+        display: inline-flex;
+        width: rem(20px);
+        height: rem(20px);
+        background-size: 100%;        
+        background-position: center center;
+        background-repeat: no-repeat
+    }
+    &::before{
+    content: '';
+    display: inline-flex;
+        width: rem(20px);
+        height: rem(20px);
+        background-size: 100%;        
+        background-position: center center;
+        background-repeat: no-repeat
+    }
+}
+.socials__link--vk{
+    &:hover{
+        background-image: url('../../image/vk_ico--hover.png');
+    }
+    &::before{
+        background-image: url('../../image/vk_ico.png');
+        
+    }
+}
+.socials__link--fb{
+    &::before{ 
+        background-image: url('../../image/fb_ico.png');
+    }
+    &:hover{
+        background-image: url('../../image/fb_ico--hover.png');
+    }
+   
+}
+.socials__link--inst{
+    &:hover{
+        background-image: url('../../image/inst_ico--hover.png');
+    }
+    &::before{ 
+        background-image: url('../../image/inst_ico.png');
+    }
+}
+.socials__link--tw{
+    &:hover{
+        background-image: url('../../image/tw_ico--hover.png');
+    }
+    &::before{ 
+        background-image: url('../../image/tw_ico.png');
+    }
+}

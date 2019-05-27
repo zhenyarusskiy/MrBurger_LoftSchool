@@ -42,3 +42,25 @@
    
   
 }
+.header__drop{
+    display: flex;
+    transform: rotate(90deg);
+
+    &-menu{
+    width: 5px;
+    height: 34px;
+    border-radius: 20%;
+    background-color: $white;
+    margin: 0px 0 0 5px;
+    @include desctop{
+        display: none;
+    }
+    &:first-child{
+        margin: 0;
+    }
+
+    }
+    @include desctop{
+        display: none;
+    }
+}

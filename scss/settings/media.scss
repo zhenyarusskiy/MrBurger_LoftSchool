@@ -1,5 +1,10 @@
 // media
 
+@mixin desctop {
+	@media screen and (min-width : $desctop){
+		@content;
+	}
+}
 
 @mixin tablets {
 	@media screen and (max-width: $tablets) {

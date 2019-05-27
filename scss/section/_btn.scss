@@ -35,6 +35,14 @@
     &:hover{
         background: #c1401e;;
     }
+    @include tablets{
+        margin-left: rem(0px);
+        margin-right: rem(20px)
+    }
+    @include phones{
+        margin-left: rem(0px);
+        margin-right: rem(20px);
+    }
 }
 .button__form-submit{
     background-color: #e45028;
