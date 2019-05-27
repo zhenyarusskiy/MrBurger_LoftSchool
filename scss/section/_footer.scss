@@ -1,6 +1,6 @@
 .footer{
     height: rem(60px);
-    background-image: url('../../image/footer_mainImg.png');
+    background-image: url('../image/footer_mainImg.png');
 }
 .footer-wrap{
     display: flex;
@@ -69,35 +69,35 @@ margin-left: rem(20px);
 }
 .socials__link--vk{
     &:hover{
-        background-image: url('../../image/vk_ico--hover.png');
+        background-image: url('../image/vk_ico--hover.png');
     }
     &::before{
-        background-image: url('../../image/vk_ico.png');
+        background-image: url('../image/vk_ico.png');
         
     }
 }
 .socials__link--fb{
     &::before{ 
-        background-image: url('../../image/fb_ico.png');
+        background-image: url('../image/fb_ico.png');
     }
     &:hover{
-        background-image: url('../../image/fb_ico--hover.png');
+        background-image: url('../image/fb_ico--hover.png');
     }
    
 }
 .socials__link--inst{
     &:hover{
-        background-image: url('../../image/inst_ico--hover.png');
+        background-image: url('../image/inst_ico--hover.png');
     }
     &::before{ 
-        background-image: url('../../image/inst_ico.png');
+        background-image: url('../image/inst_ico.png');
     }
 }
 .socials__link--tw{
     &:hover{
-        background-image: url('../../image/tw_ico--hover.png');
+        background-image: url('../image/tw_ico--hover.png');
     }
     &::before{ 
-        background-image: url('../../image/tw_ico.png');
+        background-image: url('../image/tw_ico.png');
     }
 }
