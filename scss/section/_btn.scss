@@ -1,5 +1,5 @@
 
-.button{
+.button ,.desctop__btn , .mobile__btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,8 +7,7 @@
     font-family: 'ubuntumedium';
     min-width: 6.125rem;
     padding: .625rem 1.0625rem;
-    border-radius: 5px;
-    
+    border-radius: 5px; 
     text-decoration: none;
     font-size: .8125rem;
     font-weight: 500;
@@ -19,14 +18,20 @@
     transition: .5s;
     cursor: pointer;
 
- 
-    
 }
-
-
-.review__btn{
+.mobile__btn{
+    display: inline-flex;
+    background-color: #2f3234;
+    @include desctop{
+        display: none;
+    }
+}
+/*.review__btn ,*/.desctop__btn{
   display: inline-flex;
     background-color: #2f3234;
+    @include phones{
+        display: none;
+    }
  
 }  
 .header__btn{

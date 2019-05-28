@@ -448,7 +448,7 @@ textarea {
   src: url(../fonts/Ubuntu-Regular.woff);
   font-weight: 500; }
 
-.button {
+.button, .desctop__btn, .mobile__btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,11 +475,24 @@ textarea {
   transition: .5s;
   cursor: pointer; }
 
-.review__btn {
+.mobile__btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   background-color: #2f3234; }
+  @media screen and (min-width: 1024px) {
+    .mobile__btn {
+      display: none; } }
+
+/*.review__btn ,*/
+.desctop__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #2f3234; }
+  @media screen and (max-width: 480px) {
+    .desctop__btn {
+      display: none; } }
 
 .header__btn {
   background-color: #e45028;
@@ -845,6 +858,11 @@ textarea {
   font-size: 0.875rem;
   color: #fff;
   margin-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .review__name {
+      font-size: 1.5rem;
+      word-spacing: 3rem;
+      letter-spacing: 1px; } }
 
 .review__text {
   font-family: 'ubuntulight';
@@ -855,6 +873,9 @@ textarea {
   margin-bottom: 20px;
   overflow: hidden;
   max-width: 225px; }
+  @media screen and (max-width: 480px) {
+    .review__text {
+      display: none; } }
 
 .team {
   position: relative;
@@ -1262,11 +1283,27 @@ textarea {
 .footer {
   height: 3.75rem;
   background-image: url("../image/footer_mainImg.png"); }
+  @media screen and (max-width: 480px) {
+    .footer {
+      height: 7.375rem; } }
 
 .footer-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .footer-wrap {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 10px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
 
 .contacts {
   color: #ffffff;
@@ -1283,7 +1320,7 @@ textarea {
     font-family: 'ubuntulight'; }
   .contacts__phones {
     color: #e45028;
-    font-family: 'ubuntulight'; }
+    font-family: 'ubuntumedium'; }
   .contacts__phones::before {
     content: '';
     width: 0.9375rem;
@@ -1296,6 +1333,15 @@ textarea {
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-right: 6px; }
+  @media screen and (max-width: 480px) {
+    .contacts {
+      width: unset;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
 
 .tel {
   color: #e45028; }
@@ -1311,6 +1357,10 @@ textarea {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .socials {
+      width: unset;
+      display: block; } }
 
 .socials__list {
   display: -webkit-box;

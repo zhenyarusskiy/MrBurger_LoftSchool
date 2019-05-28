@@ -19,6 +19,11 @@
         font-size: 0.875rem;
         color: #fff;
         margin-bottom: 20px;
+        @include phones{
+            font-size: 1.5rem;
+            word-spacing: 3rem;
+            letter-spacing: 1px;
+        }
     }
     .review__text{
         font-family: 'ubuntulight';
@@ -29,4 +34,7 @@
         margin-bottom: 20px;
         overflow: hidden;
         max-width: 225px;
+        @include phones{
+            display: none;
+        }
     }

@@ -1,9 +1,18 @@
 .footer{
     height: rem(60px);
     background-image: url('../image/footer_mainImg.png');
+    @include phones{
+        height: rem(118px);
+    }
 }
 .footer-wrap{
     display: flex;
+    @include phones{
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    }
 }
 
 
@@ -18,7 +27,7 @@
     }
     &__phones {
         color:$orange;
-        font-family: 'ubuntulight';
+        font-family: 'ubuntumedium';
     }
     &__phones::before{
         content: '';
@@ -31,6 +40,11 @@
         display: inline-flex;
         margin-right: 6px;       
     }
+    @include phones{
+        width: unset;
+        align-items: center;
+        display: flex;
+    }
 }
 .tel{
     color:$orange;
@@ -42,6 +56,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    @include phones{
+        width:unset;
+        display: block;
+    }
 }
 .socials__list{
     display: flex;
