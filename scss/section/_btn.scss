@@ -25,6 +25,9 @@
     @include desctop{
         display: none;
     }
+    @include tablets{
+        display: none;
+    }
 }
 /*.review__btn ,*/.desctop__btn{
   display: inline-flex;

@@ -33,7 +33,7 @@
         content: '';
         width: 0.9375rem;
         height: 0.9375rem;
-        background-image: url(../image/phone__footer.png);
+        background-image: url(../../image/sprite-icon/phone.svg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center center;
@@ -66,56 +66,14 @@
     padding: rem(13px) 0 0 0;
 }
 .socials__link{
-margin-left: rem(20px);
-    &:hover{
-        display: inline-flex;
-        width: rem(20px);
-        height: rem(20px);
-        background-size: 100%;        
-        background-position: center center;
-        background-repeat: no-repeat
-    }
-    &::before{
-    content: '';
-    display: inline-flex;
-        width: rem(20px);
-        height: rem(20px);
-        background-size: 100%;        
-        background-position: center center;
-        background-repeat: no-repeat
-    }
+margin-left: rem(20px); 
+ fill: $dark;
+ &:hover{
+     fill:$white;
+ }
 }
-.socials__link--vk{
-    &:hover{
-        background-image: url('../image/vk_ico--hover.png');
-    }
-    &::before{
-        background-image: url('../image/vk_ico.png');
-        
-    }
+.socials__link--size{
+    width: rem(20px);
+    height: rem(20px);
 }
-.socials__link--fb{
-    &::before{ 
-        background-image: url('../image/fb_ico.png');
-    }
-    &:hover{
-        background-image: url('../image/fb_ico--hover.png');
-    }
-   
-}
-.socials__link--inst{
-    &:hover{
-        background-image: url('../image/inst_ico--hover.png');
-    }
-    &::before{ 
-        background-image: url('../image/inst_ico.png');
-    }
-}
-.socials__link--tw{
-    &:hover{
-        background-image: url('../image/tw_ico--hover.png');
-    }
-    &::before{ 
-        background-image: url('../image/tw_ico.png');
-    }
-}
+
